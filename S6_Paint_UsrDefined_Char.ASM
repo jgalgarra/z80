@@ -82,8 +82,8 @@ PaintChar:                                               ; Pinta el caracter
                         LD HL,(DirBaseCaracter)          ;
                         LD IX,(DirCaracterUsr)
                         LD A,(IX)                       ;
-                        LD (HL),A
-                        LD B,6
+                        LD (HL),A                       ; Esto finalmente pinta en memoria
+                        LD B,7
 Otrasfilas              LD DE,$100
                         ADD HL,DE
                         INC IX
