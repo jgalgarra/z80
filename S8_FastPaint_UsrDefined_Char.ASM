@@ -15,9 +15,9 @@ AppFirst                equ $8000                       ; First byte of code (un
 
 TercioSuperior          equ  $4000                      ; direccion base de las filas 0 a 7
 TercioMedio             equ  $4800                      ; direccion base de las filas 8 a 15
-TercioInferior          equ  $5100                      ; direccion base de las fila 16 a 21
-NumFila                 defb 21                          ; Fila en la que se imprime el caracter
-NumColumna              defb 15                          ; Columna en la que se imprime el caracter
+TercioInferior          equ  $5000                      ; direccion base de las fila 16 a 21
+NumFila                 defb 7                          ; Fila en la que se imprime el caracter
+NumColumna              defb 0                          ; Columna en la que se imprime el caracter
 DirTercio               defw $0000                      ; direccion base en la memoria del tercio de pantalla
 OffsetFila              defb $0                         ;
 DirBaseCaracter         defw $0000                      ; direccion base en la memoria de pantalla del caracter
